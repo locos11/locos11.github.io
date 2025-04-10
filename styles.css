@@ -1,0 +1,119 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(45deg, #f4f4f9);
+    color: #333;
+    padding-top: 100px;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin: 0;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.intro {
+    max-width: 600px;
+    text-align: center;
+    animation: fadeIn 1.5s ease-out;
+}
+
+.logo {
+    width: 500px;
+    margin-bottom: 20px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+footer {
+    position: absolute;
+    bottom: 10px;
+    font-size: 0.8em;
+}
+
+nav {
+    width: 100%;
+    background-color: #333;
+    padding: 15px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.social-menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.social-menu li {
+    margin: 0 15px;
+}
+
+.social-menu a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5em;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.social-menu a:hover {
+    transform: translateY(-3px) scale(1.1);
+    color: #f4f4f9;
+}
+
+/* Animaciones específicas para cada red social */
+.social-menu a:hover .fa-twitter {
+    color: #1DA1F2;
+    animation: bounce 0.5s ease;
+}
+
+.social-menu a:hover .fa-github {
+    color: #ffffff;
+    animation: bounce 0.5s ease;
+}
+
+.social-menu a:hover .fa-linkedin {
+    color: #0077B5;
+    animation: bounce 0.5s ease;
+}
+
+.social-menu a:hover .fa-youtube {
+    color: #FF0000;
+    animation: bounce 0.5s ease;
+}
+
+.social-menu a:hover .fa-discord {
+    color: #7289DA;
+    animation: bounce 0.5s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
